@@ -8,9 +8,9 @@ class Triangle
   end 
   
   def kind
-    if length = width = height 
+    if (@length == @width) && (@width == @height) 
       :equilateral
-    elsif @length = @width || @width = @height || @length = @height  
+    elsif (@length == @width) || (@width == @height) || (@length == @height)  
       :isosceles
     else
       :scalene 
